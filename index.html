@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700;900&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- JS FILE -->
+    <script src="./app.js" defer></script>
+    <title>SNS</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="nav">
+      <div id="logo" class="">S.N.S</div>
+      <ul class="nav-links">
+        <li class="nav-list">
+          <a class="link" href="#hero">Home</a>
+        </li>
+        <li class="nav-list">
+          <a class="link" href="#carousel">Work</a>
+        </li>
+        <li class="nav-list">
+          <a class="link" href="#">Companies</a>
+        </li>
+        <li class="nav-list">
+          <a class="link" href="#"></a>
+        </li>
+        <button class="nav__contact-btn">
+          <a class="link" href="#contact">Contact</a>
+        </button>
+      </ul>
+    </header>
+    <!-- hero -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="hero__data">
+          <h1 class="hero__heading para">Heading 1</h1>
+          <p class="hero__p para">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus, quae repellendus sit blanditiis veritatis autem vero!
+            Maiores in blanditiis vero qui, minus quae vel aspernatur
+            perferendis aut et, eligendi quidem!
+          </p>
+        </div>
+        <div class="hero__img-wrapper overflow-hidden">
+          <picture>
+            <source
+              media="(min-width: 750px)"
+              srcset="./snsImages/hero-desktop.png"
+            />
+            <source
+              media="(min-width: 300px)"
+              srcset="./snsImages/hero-mobile-v.png"
+            />
+            <img src="./snsImages/hero-mobile-v.png" alt="" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- carousel -->
+    <section id="carousel" class="carousel-section">
+      <h2 class="para">OUR WORK</h2>
+      <div class="slide--wrapper">
+        <div class="slide">
+          <img src="./snsImages/fifth.jpg" id="lastClone" alt="" />
+          <img src="./snsImages/first.webp" alt="" />
+          <img src="./snsImages/second.jpg" alt="" />
+          <img src="./snsImages/third.jpg" alt="" />
+          <img src="./snsImages/fourth.jpg" alt="" />
+          <img src="./snsImages/fifth.jpg" alt="" />
+          <img src="./snsImages/first.webp" id="firstClone" alt="" />
+        </div>
+      </div>
+      <button id="prevBtn">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+      </button>
+      <button id="nextBtn">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      </button>
+    </section>
+
+    <!-- Testimonies -->
+
+    <!-- contact Section -->
+    <section id="contact" class="contact para">
+      <div class="container">
+        <div class="contact__data">
+          <h2>CONTACT US</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            numquam assumenda consequuntur ullam aperiam quod aliquam illum
+            minus magni sequi.
+          </p>
+          <button>
+            <a href="https://goo.gl/maps/D2MkqioUnBgvREjj9">Directions</a>
+          </button>
+        </div>
+        <div class="contact__img-wrapper">
+          <img src="./snsImages/maps.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer para">
+      <div class="container">
+        <p>Brand Name</p>
+        <p>contact: <span>+91836253897</span></p>
+        <div>connect with us</div>
+        <div class="social-media">
+          <a href="" class="facebook-icon">
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/snsglasshouse/"
+            class="instagram-icon"
+          >
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="" class="twitter-icon">
+            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/js/all.min.js"
+    integrity="sha512-8pHNiqTlsrRjVD4A/3va++W1sMbUHwWxxRPWNyVlql3T+Hgfd81Qc6FC5WMXDC+tSauxxzp1tgiAvSKFu1qIlA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>
